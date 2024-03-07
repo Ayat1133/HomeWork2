@@ -7,13 +7,23 @@ import org.junit.Test;
 public class TestWeakMethod4A {
 
     @Test
-    public void testWeakMethod4WithNonZeroDenominator() {
-        assertEquals(5, WeakClass.weakMethod4(10, 2));
+    public void testWeakMethod4WithNonzero() {
+        int a = 10;  
+        int b = 2;
+
+        int c = WeakClass.weakMethod4(a, b);
+
+        assertEquals(5, c);
     }
 
     @Test
-    public void testWeakMethod4WithZeroDenominator() {
-        assertEquals(-1, WeakClass.weakMethod4(10, 0));
+    public void testWeakMethod4WithZero() {
+        int a = 10;  
+        int b = 0 ;
+
+        int c = WeakClass.weakMethod4(a, b);
+
+        assertEquals(-1, c);
     }
 }
 

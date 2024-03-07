@@ -7,6 +7,7 @@ public class TestWeakMethod4B {
 
     @Test
     public void testWeakMethod4WithNonZeroDenominator() {
+    	
         assertEquals(2, WeakClass.weakMethod4(4, 2));
     }
 
