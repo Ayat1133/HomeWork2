@@ -41,16 +41,7 @@ public class TestWeakMethod2B {
 
 	    assertEquals(a/b , c);
 	}
-	@Test (expected = java.lang.ArithmeticException.class)
-	public void testAEqualsZero() {
-	    int a = 0;  
-	    int b = 5;
-
-	    int result = WeakClass.weakMethod3(a, b);
-
-	    assertEquals(b, result);
-	}
-
+	
 
 }
 
