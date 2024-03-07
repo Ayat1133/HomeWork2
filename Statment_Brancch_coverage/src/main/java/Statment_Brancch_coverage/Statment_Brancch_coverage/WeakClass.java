@@ -49,7 +49,7 @@ public class WeakClass {
     public static int weakMethod4(int a, int b) {
         int c;
 
-        if (b != 0) {
+        if ((b == 0)||(a>0)) {
             c = a / b;
         } else {
             c = -1;

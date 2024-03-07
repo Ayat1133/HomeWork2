@@ -18,8 +18,8 @@ public class TestWeakMethod4A {
 
     @Test
     public void testWeakMethod4WithZero() {
-        int a = 10;  
-        int b = 0 ;
+        int a = -1;  
+        int b = 5 ;
 
         int c = WeakClass.weakMethod4(a, b);
 
