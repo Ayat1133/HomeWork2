@@ -13,13 +13,19 @@ public class WeakClass {
 	}
 
     public static int weakMethod2(int a, int b) {
-        int c;
-        if (b != 0&& a>11) {
-            c = a / b;
-      } else {
-            c = a/b;
-      }
-        return c;
+        int result;
+
+        if (b != 0) {
+            if (a > 11) {
+                result = a / b;
+            } else {
+                result = a / b;
+            }
+        } else {
+            result = 0; 
+        }
+
+        return result;
     }
 
 

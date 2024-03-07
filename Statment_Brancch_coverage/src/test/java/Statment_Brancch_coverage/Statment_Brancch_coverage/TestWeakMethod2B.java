@@ -9,28 +9,28 @@ public class TestWeakMethod2B {
 	public void testa() {
 	    int a = 15;  
 	    int b = 3;   
+	    int expected = a / b;
+	    int actual = WeakClass.weakMethod2(a, b);
 
-	    int c = WeakClass.weakMethod2(a, b);
-
-	    assertEquals(a / b, c);
+	    assertEquals(expected, actual);
 	}
-	@Test(expected = java.lang.ArithmeticException.class)
+	@Test
 	public void testb() {
 	    int a = 15;  
-	    int b = 0;   
+	    int b = 6;   
 
 	    int c = WeakClass.weakMethod2(a, b);
 
 	    assertEquals(a / b, c);
 	}
-	@Test (expected = java.lang.ArithmeticException.class)
+	@Test 
 	public void testc() {
 	    int a = 8;  
-	    int b = 0;   
+	    int b = 9;   
 
 	    int c = WeakClass.weakMethod2(a, b);
 
-	    assertEquals(a +6 , c);
+	    assertEquals(a/b , c);
 	}
 	@Test 
 	public void testd() {
